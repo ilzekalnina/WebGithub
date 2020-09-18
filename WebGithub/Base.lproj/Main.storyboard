@@ -39,7 +39,14 @@
                             <outlet property="delegate" destination="zru-w8-2RA" id="3wS-Fd-Zdd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GitWeb" id="y1D-pv-wRo"/>
+                    <navigationItem key="navigationItem" title="GitWeb" id="y1D-pv-wRo">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus.circle.fill" catalog="system" id="k6k-Fv-Ueg">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="addNewProjectTapped:" destination="zru-w8-2RA" id="5PI-yD-oke"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gD-zB-1CC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,4 +103,7 @@
             <point key="canvasLocation" x="-819" y="153"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
